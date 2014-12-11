@@ -1,0 +1,70 @@
+html > body > .component-separator-subscription {
+  .full-background("../image/_separator-subscription-background.png");
+  background-color: @secondaryColor;
+  margin:100px 0;
+
+  @media (max-width: @xsScreenSizeMax) {
+    margin:50px 0;
+  }
+
+  .container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    text-align: center;
+
+    .line-separator {
+      width: 170px;
+      margin: 45px auto;
+      height: 1px;
+      background-color: rgba(255,255,255,0.1);
+
+      @media (max-width: @xsScreenSizeMax) {
+        margin: 20px auto;
+      }
+    }
+
+    .title {
+      h3 {
+        font-size: 2.6em;
+        font-weight: 100;
+        color: #ffffff;
+      }
+    }
+    .description {
+      p {
+        color: #ffffff;
+        span {
+          color: @primaryTextColor;
+        }
+      }
+    }
+    .input-container {
+      .input-email {
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+        max-width: 270px;
+        padding: 5px 10px;
+        background-color: rgba(227, 231, 233, 0.2);
+        @media (max-width: @xsScreenSizeMax) {
+          max-width: 77%;
+        }
+      }
+      .btn {
+        margin-left: 30px;
+        font-size: 0.85em;
+        padding: 7px 33px;
+        border-radius: 0;
+        text-transform: uppercase;
+        margin-top: -1px;
+
+        @media (max-width: @xsScreenSizeMax) {
+          width: 77%;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

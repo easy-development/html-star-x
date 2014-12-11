@@ -1,0 +1,65 @@
+html > body > .component-footer-bar {
+  background-color: #363f44;
+  .container {
+    padding: 40px 0 25px 0;
+
+    @media (max-width: @xsScreenSizeMax) {
+      text-align: center;
+    }
+
+    .row {
+      > div {
+         p{
+           margin: 0;
+           color: #aeb0b2;
+           font-size: 0.89em;
+           font-weight: 300;
+           line-height: 2em;
+         }
+
+        ul {
+          list-style:none;
+          padding: 0;
+          float: right;
+          margin-right: 10px;
+
+          @media (max-width: @xsScreenSizeMax) {
+            float: none;
+            margin-top: 5px;
+          }
+
+          > li {
+            display: inline-block;
+            margin-right: 5px;
+
+            > a {
+              text-decoration: none;
+              > span.fa {
+                &.fa-facebook {
+                  padding: 8px 13px;
+                }
+
+                display: block;
+                font-size: 1.2em;
+                width: 36px;
+                height: 36px;
+                padding: 8px 10px;
+                border:1px solid @secondaryColor;
+                border-radius: 200px;
+                color: @secondaryColor;
+              }
+            }
+
+            &:hover {
+              > a > span {
+                background   : @secondaryColor;
+                color        : #ffffff;
+                border-color : @secondaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

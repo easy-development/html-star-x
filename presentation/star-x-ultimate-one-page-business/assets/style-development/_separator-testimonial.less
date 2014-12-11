@@ -1,0 +1,46 @@
+html > body > .component-separator-testimonial {
+    .full-background("../image/_separator-testimonial-background.png");
+    background-color: @secondaryColor;
+    background-position: 0 0;
+    margin:100px 0;
+
+    @media (max-width: @xsScreenSizeMax) {
+      margin:50px 0;
+    }
+
+   overflow: hidden;
+
+   .container{
+
+     padding-top: 90px;
+     padding-bottom: 90px;
+     text-align: center;
+
+     ul {
+       li {
+         color: #fff;
+         font-family: "Lato" , sans-serif;
+
+         > .quotation {
+           font-size: 22px;
+           font-weight: 100;
+           font-style: italic;
+           margin-bottom: 25px;
+           color: inherit;
+           font-family: inherit;
+         }
+
+         > .author {
+           color: inherit;
+           font-family: inherit;
+           font-size: 16px;
+           font-weight: 500;
+           font-style: normal;
+           span {
+             color: @primaryTextColor;
+           }
+         }
+       }
+     }
+   }
+}

@@ -1,0 +1,132 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+html > body > .component-device-show-case {
+
+    > .container {
+     height:420px;
+
+     > h1 {
+       margin: 0 0 70px 0;
+       font-size: 48px;
+       font-weight: 100;
+       text-align: center;
+       margin-bottom: 65px;
+       color: @secondaryTextColor;
+
+       span {
+         font-weight: 500;
+       }
+     }
+
+     .content {
+       margin: 0 auto;
+       max-width: 480px;
+       height:300px;
+       position: relative;
+
+       @media (max-width: @lsScreenSizeMax) {
+         max-width: 395px;
+       }
+       @media (max-width: 480px) {
+         max-width: 300px;
+       }
+
+       > div > img {
+         width: 100%;
+       }
+
+       > .imac {
+         left: 0;
+         right: 0;
+         bottom: 0;
+         z-index: 1;
+         margin: 0 auto;
+         max-width: 370px;
+         position: absolute;
+         @media (max-width: @lsScreenSizeMax) {
+           max-width: 335px;
+         }
+
+         @media (max-width: 480px) {
+           max-width: 260px;
+         }
+       }
+
+       > .ipad {
+         bottom: 0;
+         left: 30px;
+         z-index: 2;
+         max-width: 160px;
+         position: absolute;
+         @media (max-width: @lsScreenSizeMax) {
+           left: 0;
+           max-width: 145px;
+         }
+         @media (max-width: 480px) {
+           max-width: 120px;
+         }
+       }
+
+       > .iphone {
+         bottom: 0;
+         z-index: 3;
+         left: 143px;
+         max-width: 90px;
+         position: absolute;
+
+         @media (max-width: @lsScreenSizeMax) {
+           left: 105px;
+           max-width: 75px;
+         }
+         @media (max-width: 480px) {
+           max-width: 60px;
+           left: 90px;
+         }
+       }
+
+       > .badge {
+         right: 0;
+         top: 50px;
+         z-index: 4;
+         width: 110px;
+         height: 110px;
+         position: absolute;
+         border-radius: 128px;
+         background-color: #65c27f;
+         -moz-border-radius: 128px;
+         -webkit-border-radius: 128px;
+         box-shadow: -5px 5px 0 rgba(0,0,0,.12);
+         -moz-box-shadow: -5px 5px 0 rgba(0,0,0,.12);
+         -webkit-box-shadow: -5px 5px 0 rgba(0,0,0,.12);
+
+         @media (max-width: @lsScreenSizeMax) {
+           top: 75px;
+           width: 90px;
+           height: 90px;
+         }
+         @media (max-width: 480px) {
+           top: 100px;
+           width: 50px;
+           height: 50px;
+         }
+
+         p {
+           margin: 0;
+           color: #fff;
+           font-size: 1.7em;
+           font-weight: 100;
+           line-height: 100px;
+           font-family: "Open Sans", sans-serif;
+           
+           @media (max-width: @lsScreenSizeMax) {
+             line-height: 83px;
+           }
+           @media (max-width: 480px) {
+             font-size: 1em;
+             line-height: 45px;
+           }
+         }
+       }
+     }
+   }
+}

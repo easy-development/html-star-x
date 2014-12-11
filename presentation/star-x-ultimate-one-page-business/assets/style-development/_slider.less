@@ -1,0 +1,126 @@
+html > body > .component-slider {
+  .carousel {
+  	background-color: #363f44;
+  }
+
+  .carousel > .carousel-inner > .item > img {
+    width:100%;
+    max-height: @sliderImageMaxHeight;
+  }
+
+  .carousel-control.right,
+  .carousel-control.left {
+  	background-image: none;
+  }
+
+  .glyphicon-chevron-left,
+  .glyphicon-chevron-right {
+  	font-size: 12px;
+  	width: 50px;
+  	height: 50px;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    @media (max-width: @smScreenSizeMax) {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .carousel-caption {
+
+    @media (max-width: @headerSmallWidthTroubleshoot) {
+      top:1.5em;
+    }
+
+
+    top:2.5em;
+    bottom: 0;
+  	text-shadow: none;
+
+    > header {
+
+      h1 {
+
+        @media (max-width: @headerSmallWidthTroubleshoot) {
+          font-size: 24px;
+        }
+
+        font-size: 36px;
+        font-weight: 300;
+        padding-bottom: 60px;
+        text-transform: uppercase;
+
+        span {
+          font-size: inherit;
+          margin: 0 10px;
+
+          @media (max-width: @headerSmallWidthTroubleshoot) {
+           display: none;
+          }
+        }
+      }
+    }
+
+    > .content {
+
+      @media (max-width: @headerSmallWidthTroubleshoot) {
+        display: none;
+      }
+
+      > p {
+        &.section {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 100;
+        }
+        &.sub-section {
+          font-size: 14px;
+          font-style: italic;
+          font-weight: 100;
+        }
+
+        margin-bottom: 35px;
+        color: #fff;
+      }
+
+      > ul.icon-list {
+        display: block;
+        margin: 0 0 25px 0;
+
+        > li {
+          &:hover {
+
+            > span > span {
+                color: @primaryColor;
+            }
+          }
+
+          font-size: 3em;
+          display: inline-block;
+
+          > span {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+
+    > footer {
+      @media (max-width: @headerSmallWidthTroubleshoot) {
+        display: none;
+      }
+
+      .glyphicon-minus {
+        font-size: 0.75em;
+        margin: 0 25px;
+      }
+      a {
+        font-weight: 100;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,90 @@
+html > body > .component-business-services-2 {
+  .container {
+    .row {
+      > div {
+        .title {
+          h2 {
+            font-weight: 100;
+            font-size: 2.6em;
+            margin: 0 0 45px 0;
+            color: @thirdTextColor;
+
+            @media (max-width: @xsScreenSizeMax) {
+              text-align: center;
+              margin-bottom: 25px;
+            }
+          }
+        }
+        .description {
+          margin: 0 0 45px 0;
+
+          @media (max-width: @xsScreenSizeMax) {
+            text-align: center;
+          }
+        }
+        .left {
+          > div {
+            margin-bottom: 20px;
+            &:hover {
+              .icon {
+                span {
+                  color: @primaryTextColor;
+                }
+              }
+              .details {
+                h3 {
+                  color: @primaryTextColor;
+                }
+              }
+            }
+
+            .icon {
+              float: left;
+              @media (max-width: @xsScreenSizeMax) {
+                float: none;
+                text-align: center;
+              }
+
+              span {
+                color: #748084;
+                &:before {
+                  font-size: 50px;
+                }
+              }
+            }
+            .details {
+              float: left;
+              text-align: left;
+              @media (max-width: @xsScreenSizeMax) {
+                text-align: center;
+                width: 100%;
+                margin-top: 20px;
+              }
+              h3 {
+                color: #748084;
+                margin: 0 0 10px 0;
+                font-weight: 500;
+              }
+              p {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .business-services-iphone {
+          max-width: 400px;
+          margin: 85px 0 0 0;
+
+          @media (max-width: @xsScreenSizeMax) {
+            margin: 0 auto;
+            max-width: 250px;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

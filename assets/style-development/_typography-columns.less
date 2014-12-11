@@ -1,0 +1,47 @@
+html > body > .component-typography-columns {
+  .container {
+    .title {
+      h1{
+        margin-top: 0;
+        font-size: 3.4em;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 40px;
+        color: @thirdTextColor;
+      }
+    }
+
+    .contain {
+      .row {
+        > div {
+          margin-bottom: 40px;
+
+          span {
+            font-size: 1.3em;
+            font-weight: 500;
+            color: @thirdTextColor;
+          }
+
+          p{
+            margin-top: 40px;
+
+            @media (max-width: @xsScreenSizeMax) {
+              margin-top: 10px;
+            }
+          }
+        }
+
+        &:last-child {
+          > div {
+            margin-bottom: 0;
+
+            @media (max-width: @xsScreenSizeMax) {
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

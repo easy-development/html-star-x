@@ -1,0 +1,31 @@
+html > body > .component-separator-headline {
+  background: url("../image/_separator-headline-background.png") center;
+  background-color: @secondaryColor;
+  margin:100px 0;
+
+  @media (max-width: @xsScreenSizeMax) {
+    margin:50px 0;
+  }
+
+  .container {
+    padding: 60px 0;
+    text-align: center;
+
+    h1 {
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: 300;
+      margin: 0 0 10px 0;
+      span {
+        font-weight: bold;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 300;
+      color: @primaryTextColor;
+      text-transform: uppercase;
+    }
+  }
+}

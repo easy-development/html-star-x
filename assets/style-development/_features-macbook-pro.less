@@ -1,0 +1,96 @@
+html > body > .component-features-macbook-pro {
+  .container{
+    .row {
+      > div {
+        .title {
+          h2 {
+            font-weight: 100;
+            font-size: 3.4em;
+            margin: 0 0 65px 0;
+            color: @thirdTextColor;
+            span{
+              font-weight: 500;
+            }
+            @media (max-width: @smScreenSizeMax) {
+              margin: 0 0 30px 0;
+            }
+            @media (max-width: @xsScreenSizeMax) {
+              text-align: center;
+            }
+          }
+        }
+
+        .description {
+          margin-bottom: 45px;
+          @media (max-width: @smScreenSizeMax) {
+            margin-bottom: 30px;
+          }
+          p {
+            font-weight: 300;
+            padding-bottom: 25px;
+            span {
+              font-weight: 800;
+            }
+            @media (max-width: @smScreenSizeMax) {
+              padding-bottom: 10px;
+            }
+          }
+        }
+
+        .button {
+          @media (max-width: @xsScreenSizeMax) {
+            text-align: center;
+            margin-bottom: 40px;
+          }
+
+          .glyphicon-minus {
+            font-size: 0.75em;
+            margin: 0 25px;
+            @media (max-width: @lsScreenSizeMax) {
+              margin: 10px 35%;
+            }
+          }
+          a {
+            font-weight: 100;
+            padding-left: 48px;
+            padding-right: 48px;
+
+            &.btn-default {
+              background-color: #e7eaeb;
+            }
+
+            @media (max-width: @smScreenSizeMax) {
+              padding-left: 22px;
+              padding-right: 22px;
+            }
+            @media (max-width: @xsScreenSizeMax) {
+              padding-left: 48px;
+              padding-right: 48px;
+            }
+          }
+        }
+      }
+      .contain-macbook{
+        position: relative;
+        img.mac-macbook {
+          width: 100%;
+        }
+        img.mac-macbook-screen {
+          width: 73%;
+          position: absolute;
+          top: 5.5%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+
+          @media (max-width: @smScreenSizeMax) {
+            width: 71%;
+          }
+          @media (max-width: @xsScreenSizeMax) {
+            width: 72%;
+          }
+        }
+      }
+    }
+  }
+}

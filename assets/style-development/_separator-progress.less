@@ -1,0 +1,54 @@
+html > body > .component-separator-progress {
+  .full-background("../image/_separator-progress-background.png");
+  background-color: @secondaryColor;
+  margin:100px 0;
+
+  @media (max-width: @xsScreenSizeMax) {
+    margin:50px 0;
+  }
+
+  .container {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    text-align: center;
+
+    @media (max-width: @xsScreenSizeMax) {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    h3, span, p {
+      font-weight: 300;
+    }
+    .row {
+      > div {
+        @media (max-width: @xsScreenSizeMax) {
+          margin-bottom: 30px;
+        }
+
+        .progress-bar-round-container {
+          span {
+            color: #fff;
+            font-size: 1.3em;
+          }
+
+          .progress-bar-round {
+            display: block;
+          }
+        }
+
+        h3 {
+          color: #fff;
+          margin: 25px 0;
+          font-size: 1.7em;
+          text-transform: uppercase;
+        }
+
+        > p {
+          color: #abb7bb;
+          font-size: 0.85em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+html > body > .component-separator-subscription-video {
+  .full-background("../image/_separator-subscription-video-background.png");
+  background-color: @secondaryColor;
+  margin:100px 0;
+
+  @media (max-width: @xsScreenSizeMax) {
+    margin:50px 0;
+  }
+  .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .row {
+      > div {
+        @media (max-width: @smScreenSizeMax) {
+          width: 100%;
+        }
+
+        .video {
+          width: 100%;
+          height:375px;
+          border: 0;
+        }
+
+        &.contain-bg-logo {
+          img {
+            display: block;
+            width: auto;
+            margin: 100% auto 0 auto;
+            @media (max-width: @smScreenSizeMax) {
+              margin: 50px 0;
+              width: auto;
+            }
+          }
+        }
+
+        .title {
+          h3 {
+            margin: 0;
+            color: #ffffff;
+            font-weight: 100;
+            text-transform: uppercase;
+          }
+        }
+        .line-separators {
+          width: 100%;
+          float: left;
+          margin: 15px 0;
+          height: 1px;
+          background-color: rgba(255,255,255,0.1);
+        }
+        .description {
+          p {
+            margin: 0;
+            padding-bottom: 20px;
+          }
+        }
+        form {
+          input {
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            font-weight: 100;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            background-color: rgba(227, 231, 233, 0.2);
+          }
+          .btn {
+            font-size: 0.85em;
+            padding: 7px 33px;
+            border-radius: 0;
+            text-transform: uppercase;
+            margin-top: -1px;
+          }
+        }
+      }
+
+    }
+  }
+
+}

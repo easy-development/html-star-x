@@ -1,0 +1,52 @@
+html > body > .component-features-mac {
+  .container {
+    .title {
+      h1 {
+        font-weight: 100;
+        font-size: 3.4em;
+        margin: 0 0 40px 0;
+        text-align: center;
+        color: @thirdTextColor;
+      }
+    }
+
+    .row {
+      > div {
+        float: none;
+        margin: 0 auto;
+
+        p {
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 70px;
+
+          span {
+            color: @primaryTextColor;
+          }
+        }
+        &.contain-macbook{
+          position: relative;
+          img.mac-macbook {
+            width: 100%;
+          }
+          img.mac-macbook-screen {
+            width: 74%;
+            position: absolute;
+            top: 5.5%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+            @media (max-width: @smScreenSizeMax) {
+              width: 73.3%;
+            }
+
+            @media (max-width: @xsScreenSizeMax) {
+              width: 72%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

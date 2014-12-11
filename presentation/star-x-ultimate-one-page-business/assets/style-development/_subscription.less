@@ -1,0 +1,75 @@
+html > body > .component-subscription {
+  background: url("../image/_subscription-background.png");
+  background-color: @primaryColor;
+
+  .container {
+    form {
+      margin: 0;
+      .row {
+        div {
+          margin: 29px 0;
+          height: 42px;
+
+          h3 {
+            margin: 0;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 100;
+            line-height: 42px;
+            text-transform: uppercase;
+
+            @media (max-width: @smScreenSizeMax) {
+              font-size: 20px;
+            }
+
+            @media (max-width: @xsScreenSizeMax) {
+              font-size: 17px;
+            }
+          }
+          input {
+            width: 100%;
+            height: 42px;
+            border: none;
+            padding: 0 10px;
+            font-size: 18px;
+            box-shadow: none;
+            background-image: none;
+            background-color: rgba(255,255,255,0.7);
+          }
+          .button-action {
+            &:hover {
+              text-decoration: none;
+              background-color: rgba(255, 255, 255, 0.2);
+            }
+            width: 100%;
+            float: left;
+            border: none;
+            height: 100%;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 100;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+        }
+        .col-md-2, .col-md-4 {
+          @media (max-width: @smScreenSizeMax) {
+            margin: 0;
+          }
+        }
+        .col-md-2 {
+          @media (max-width: @smScreenSizeMax) {
+            margin-bottom: 25px ;
+          }
+        }
+        .col-md-6 {
+          @media (max-width: @smScreenSizeMax) {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+
+}

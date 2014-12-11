@@ -1,0 +1,58 @@
+html > body > .component-skills-bar {
+  .container {
+    .title {
+      h1 {
+        font-weight: 100;
+        font-size: 3.4em;
+        margin: 0 0 90px 0;
+        text-align: center;
+        color: @thirdTextColor;
+        span {
+          font-weight: 500;
+        }
+
+        @media (max-width: @xsScreenSizeMax) {
+          margin: 0 0 40px 0;
+        }
+      }
+    }
+
+    .row {
+      > div {
+        > div {
+          margin-bottom: 40px;
+
+          p {
+            font-size: 1.3em;
+            font-weight: 500;
+            @media (max-width: @lsScreenSizeMax) {
+              font-weight: 300;
+            }
+
+            span {
+              font-weight: 800;
+              margin-left: 20px;
+              @media (max-width: @lsScreenSizeMax) {
+                font-weight: 500;
+              }
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &:first-child {
+          > div {
+            &:last-child {
+              @media (max-width: @xsScreenSizeMax) {
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

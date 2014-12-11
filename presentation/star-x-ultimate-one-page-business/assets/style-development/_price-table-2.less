@@ -1,0 +1,99 @@
+html > body > .component-price-table-2 {
+  .container {
+    .title {
+      h1 {
+        font-weight: 100;
+        font-size: 3.4em;
+        margin: 0 0 40px 0;
+        text-align: center;
+        color: @thirdTextColor;
+
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+
+
+    .row {
+      > div {
+        > p {
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 70px;
+
+          span {
+            color: @primaryTextColor;
+          }
+        }
+      }
+
+      .talon {
+        padding: 30px 0;
+        text-align: center;
+        background-color: #363f44;
+
+        @media (max-width: @xsScreenSizeMax) {
+          margin-bottom: 30px;
+        }
+
+        h2, h3, p, span, a {
+          color: #ffffff;
+        }
+
+        .title-talon > h2 {
+            margin: 0;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .price {
+
+          width: 115px;
+          height: 115px;
+          margin: 0 auto;
+          margin-top: 50px;
+          margin-bottom: 30px;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border: 3px solid #ffffff;
+
+          h3 {
+            font-weight: 300;
+            margin: 33px 0 5px 0;
+          }
+
+          p {
+            font-size: 0.85em;
+            font-weight: 300;
+            text-transform: uppercase;
+          }
+        }
+
+        .benefit {
+          p {
+            font-size: 0.85em;
+            font-weight: 300;
+            span {
+              font-weight: 800;
+            }
+          }
+        }
+
+        a.btn {
+          margin-top: 20px;
+          font-weight: 300;
+          border-radius: 0;
+          font-size: 0.85em;
+          padding: 9px 15px;
+          text-transform: uppercase;
+        }
+      }
+
+      .talon-premium {
+        background-color: @primaryColor;
+      }
+    }
+  }
+}
